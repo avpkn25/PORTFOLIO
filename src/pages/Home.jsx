@@ -22,7 +22,7 @@ const Home = () => {
             className="rounded-full border-2 border-[#9a35ff] w-[500px] h-[500px] mx-auto overflow-hidden"
           >
             <img
-              src="/src/images/p8.jpg"
+              src="/src/images/main.jpg"
               alt="Profile"
               className="w-full h-full object-cover"
             />
