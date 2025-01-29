@@ -19,7 +19,7 @@ const Home = () => {
           <motion.div
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}
-            className="rounded-full border-2 border-[#9a35ff] w-[500px] h-[500px] mx-auto overflow-hidden"
+            className="rounded-full border-2 border-[#9a35ff] w-[400px] h-[400px] mt-4 mx-auto overflow-hidden"
           >
             <img
               src='/images/main.jpg'
