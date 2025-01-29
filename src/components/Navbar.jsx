@@ -53,15 +53,15 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-[#0a192f] py-4">
+        <div className="md:hidden absolute top-full left-0 w-full bg-[#1a0b2e] py-4">
           {navItems.map((item) => (
             <NavLink
               key={item.path}
               to={item.path}
               className={({ isActive }) =>
                 `block px-4 py-2 text-${
-                  isActive ? "blue-400" : "gray-300"
-                } hover:text-blue-400 transition-colors`
+                  isActive ? "[#882fe0]" : "gray-300"
+                } hover:text-[#882fe0] transition-colors`
               }
               onClick={() => setIsOpen(false)}
             >
