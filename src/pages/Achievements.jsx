@@ -13,7 +13,7 @@ const Achievements = () => {
     {
       title: "RedHat Certified Enterprise Application Developer",
       description: "Achieved by Red Hat",
-      image: "/src/images/certifications/redhat.png",
+      image: "/images/certifications/redhat.png",
       proof: "https://aws.amazon.com/certification"
     },
     {
