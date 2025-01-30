@@ -88,8 +88,9 @@ const About = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="border-2 border-[#9a35ff] text-[#9a35ff] px-6 py-3 rounded-lg hover:bg-[#7127ba] hover:text-white transition-colors"
+              onClick={() => window.open("https://wa.me/+917893445580", "_blank")}
             >
-              Download CV
+              Let's Talk!
             </motion.button>
           </div>
         </motion.div>
@@ -179,7 +180,7 @@ const About = () => {
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.1 }}
-                className="bg-[#42166d] p-4 rounded-lg flex items-center justify-center"
+                className="bg-[#42166d] p-3 sm:p-4 rounded-lg flex items-center justify-center"
               >
                 <Code className="text-blue-500 w-8 h-8" />
               </motion.div>

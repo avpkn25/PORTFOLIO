@@ -61,7 +61,7 @@ const Achievements = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="min-h-screen bg-[#11071f]/90 pt-20 px-4"
+      className="min-h-screen bg-[#11071f]/90 pt-20 px-3 sm:px-4"
     >
       <div className="container mx-auto">
         <h1 className="text-4xl mt-9 font-bold text-center mb-12"> <span className='text-[#7127ba]' >My</span> Achievements</h1>

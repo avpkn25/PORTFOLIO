@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import { TypeAnimation } from "react-type-animation";
+import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const navItems = [
     { path: "/", label: "Home" },
@@ -14,14 +17,14 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed w-full bg-[#1a0b2e]/90 backdrop-blur-sm z-50 px-6 py-6">
+    <nav className="fixed w-full bg-[#1a0b2e]/90 backdrop-blur-sm z-50 px-3 sm:px-4 py-4">
       <div className="container mx-auto flex justify-between items-center">
         <NavLink to="/" className="flex items-center space-x-2">
           <div className="bg-[#7127ba] rounded-full w-8 h-8 mt-1.5 flex items-center justify-center">
             <span className="text-white font-bold">PK</span>
           </div>
-          <span className="text-white text-2xl font-bold">
-            Praveen Kumar
+          <span className="text-white text-lg sm:text-xl mt-1 font-bold">
+            {location.pathname === "/" ? "Portfolio" : "Praveen Kumar"}
           </span>
         </NavLink>
 
@@ -53,13 +56,13 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-[#1a0b2e] py-4">
+        <div className="md:hidden absolute top-full left-0 w-full bg-[#1a0b2e] py-4 border-t border-gray-800">
           {navItems.map((item) => (
             <NavLink
               key={item.path}
               to={item.path}
               className={({ isActive }) =>
-                `block px-4 py-2 text-${
+                `block px-4 py-2 text-sm text-${
                   isActive ? "[#882fe0]" : "gray-300"
                 } hover:text-[#882fe0] transition-colors`
               }

@@ -19,7 +19,7 @@ const Home = () => {
           <motion.div
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}
-            className="rounded-full border-2 border-[#9a35ff] w-[400px] h-[400px] mt-4 mx-auto overflow-hidden"
+            className="rounded-full border-2 border-[#9a35ff] sm:w-[400px] sm:h-[400px] w-64 h-64 mt-4 mx-auto overflow-hidden"
           >
             <img
               src='/images/main.jpg'
@@ -66,14 +66,16 @@ const Home = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-[#7127ba] text-white px-6 py-3 rounded-lg hover:bg-[#2e1452] transition-colors"
+                className="bg-[#7127ba] text-white px-6 py-3 rounded-lg hover:bg-[#2e1452] transition-colors w-full sm:w-auto"
+                onClick={() => (window.location.href = "/about")}
               >
                 About Me
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="border-2 border-[#9a35ff] text-[#9a35ff] px-6 py-3 rounded-lg hover:bg-[#7127ba] hover:text-white transition-colors"
+                className="border-2 border-[#9a35ff] text-[#9a35ff] px-6 py-3 rounded-lg hover:bg-[#7127ba] hover:text-white transition-colors w-full sm:w-auto"
+                onClick={() => (window.location.href = "/projects")}
               >
                 View My Work
               </motion.button>

@@ -35,7 +35,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold">Phone</h3>
-                    <p className="text-gray-400">+91 7893445580</p>
+                    <p className="text-gray-400 text-sm sm:text-lg break-all">+91 7893445580</p>
                   </div>
                 </div>
                 
@@ -45,8 +45,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold">Location</h3>
-                    <p className="text-gray-400">Gowravaram, Kavali, Nellore,</p>
-                    <p className="text-gray-400">Andhra Pradesh, India</p>
+                    <p className="text-gray-400 text-sm sm:text-lg break-all">Gowravaram, Kavali, Nellore,</p>
+                    <p className="text-gray-400 text-sm sm:text-lg break-all">Andhra Pradesh, India</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -55,8 +55,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold">Email</h3>
-                    <p className="text-gray-400">praveenkumarnaidu88@gmail.com</p>
-                    <p className="text-gray-400">220030306cseh@gmail.com</p>
+                    <p className="text-gray-400 text-sm sm:text-lg break-all">praveenkumarnaidu88@gmail.com</p>
+                    <p className="text-gray-400 text-sm sm:text-lg break-all">220030306cseh@gmail.com</p>
                   </div>
                 </div>
               </div>
