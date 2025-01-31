@@ -238,7 +238,7 @@ const About = () => {
                   className="bg-[#7127ba] p-6 rounded-lg text-center"
                 >
                   <h3 className="text-3xl font-bold mb-2">{stat.value}</h3>
-                  <p className="text-1xl text-gray-200">{stat.title}</p>
+                  <p className="text-xs sm:text-xl text-gray-200">{stat.title}</p>
                 </motion.div>
               ))}
             </div>
@@ -262,7 +262,7 @@ const About = () => {
                   whileHover={{ scale: 1.1 }}
                   className="bg-[#42166d] p-3 sm:p-4 rounded-lg flex items-center justify-center gap-2 cursor-pointer"
                 >
-                  <div className="w-12 h-12">{tech.icon}</div>
+                  <div className="w-8 h-8 sm:w-8 sm:h-8 md:w-12 md:h-12">{tech.icon}</div>
                   <span className="hidden sm:block sm:text-base md:text-lg">{tech.name}</span>
                 </motion.div>
               </a>
