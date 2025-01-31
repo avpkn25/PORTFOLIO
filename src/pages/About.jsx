@@ -58,30 +58,30 @@ const About = () => {
   ];
 
   const techStack = [
-    { name: "Java", icon: <StackIcon name="java" /> },
-    { name: "Spring Boot", icon: <StackIcon name="spring" /> },
-    { name: "React", icon: <StackIcon name="reactjs" /> },
-    { name: "Python", icon: <StackIcon name="python" /> },
-    { name: "Vite", icon: <StackIcon name="vitejs" /> },
-    { name: "JavaScript", icon: <StackIcon name="js" /> },
-    { name: "MySQL", icon: <StackIcon name="mysql" /> },
-    { name: "AWS", icon: <StackIcon name="aws" /> },
-    { name: "Html", icon: <StackIcon name="html5" /> },
-    { name: "Css", icon: <StackIcon name="css3" /> },
-    { name: "django", icon: <StackIcon name="django" /> },
-    { name: "MongoDB", icon: <StackIcon name="mongodb" /> },
-    { name: "Postman", icon: <StackIcon name="postman" /> },
-    { name: "Git", icon: <StackIcon name="git" /> },
-    { name: "Tailwind", icon: <StackIcon name="tailwindcss" /> },
-    { name: "GCloud", icon: <StackIcon name="gcloud" /> },
-    { name: "Vs Code", icon: <StackIcon name="vscode" /> },
-    { name: "Github", icon: <StackIcon name="github" /> },
-    { name: "Docker", icon: <StackIcon name="docker" /> },
-    { name: "Azure", icon: <StackIcon name="azure" /> },
-    { name: "Figma", icon: <StackIcon name="figma" /> },
-    { name: "Canva", icon: <StackIcon name="canva" /> },
-    { name: "Red Hat", icon: <StackIcon name="redhat" /> },
-    { name: "Linux", icon: <StackIcon name="linux" /> },
+    { name: "Java", icon: <StackIcon name="java" />, url:"https://www.java.com/en/" },
+    { name: "Spring Boot", icon: <StackIcon name="spring" />, url: "https://spring.io/projects/spring-boot" },
+    { name: "React", icon: <StackIcon name="reactjs" />, url: "https://react.dev/" },
+    { name: "Python", icon: <StackIcon name="python" />, url: "https://www.python.org/" },
+    { name: "Vite", icon: <StackIcon name="vitejs" />, url: "https://vite.dev/" },
+    { name: "JavaScript", icon: <StackIcon name="js" />, url: "https://www.w3schools.com/js/" },
+    { name: "MySQL", icon: <StackIcon name="mysql" />, url: "https://www.mysql.com/" },
+    { name: "AWS", icon: <StackIcon name="aws" />, url: "https://aws.amazon.com/" },
+    { name: "Html", icon: <StackIcon name="html5" />, url: "https://www.w3schools.com/html/" },
+    { name: "Css", icon: <StackIcon name="css3" />, url: "https://www.w3schools.com/css/" },
+    { name: "django", icon: <StackIcon name="django" />, url: "https://www.djangoproject.com/" },
+    { name: "MongoDB", icon: <StackIcon name="mongodb" />, url: "https://www.mongodb.com/" },
+    { name: "Postman", icon: <StackIcon name="postman" />, url: "https://www.postman.com/" },
+    { name: "Git", icon: <StackIcon name="git" />, url: "https://git-scm.com/" },
+    { name: "Tailwind", icon: <StackIcon name="tailwindcss" />, url: "https://tailwindcss.com/" },
+    { name: "GCloud", icon: <StackIcon name="gcloud" />, url: "https://cloud.google.com/?hl=en" },
+    { name: "Vs Code", icon: <StackIcon name="vscode" />, url: "https://code.visualstudio.com/" },
+    { name: "Github", icon: <StackIcon name="github" />, url: "https://github.com/" },
+    { name: "Docker", icon: <StackIcon name="docker" />, url: "https://www.docker.com/" },
+    { name: "Azure", icon: <StackIcon name="azure" />, url: "https://azure.microsoft.com/en-in" },
+    { name: "Figma", icon: <StackIcon name="figma" />, url: "https://www.figma.com/" },
+    { name: "Canva", icon: <StackIcon name="canva" />, url: "https://www.canva.com/" },
+    { name: "Red Hat", icon: <StackIcon name="redhat" />, url: "https://www.redhat.com/en" },
+    { name: "Linux", icon: <StackIcon name="linux" />, url: "https://www.linux.org/" },
   ];
 
   return (
@@ -256,16 +256,16 @@ const About = () => {
             <span className="text-[#7127ba]">My</span> Tech Stack
           </h2>
           <div className="grid grid-cols-4 md:grid-cols-8 gap-6">
-            {/* Add your tech stack icons here */}
             {techStack.map((tech, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ scale: 1.1 }}
-                className="bg-[#42166d] p-3 sm:p-4 rounded-lg flex items-center justify-center gap-2"
-              >
-                <div className="w-12 h-12">{tech.icon} </div>{" "}
-                <span>{tech.name}</span>
-              </motion.div>
+              <a key={index} href={tech.url} target="_blank" rel="noopener noreferrer">
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className="bg-[#42166d] p-3 sm:p-4 rounded-lg flex items-center justify-center gap-2 cursor-pointer"
+                >
+                  <div className="w-12 h-12">{tech.icon}</div>
+                  <span className="hidden sm:block sm:text-base md:text-lg">{tech.name}</span>
+                </motion.div>
+              </a>
             ))}
           </div>
         </motion.div>
