@@ -1,12 +1,36 @@
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useEffect } from "react";
+import Swal from 'sweetalert2'
 
 
 const Contact = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add your form submission logic here
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "48ae8c55-e70c-457d-9d57-a040d35819c2");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      Swal.fire({
+        title: "Success!",
+        text: "message sent Successfully!",
+        icon: "success"
+      });
+    }
   };
 
   useEffect(() => {
@@ -67,7 +91,7 @@ const Contact = () => {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2 }}
-              onSubmit={handleSubmit}
+              onSubmit={onSubmit}
               className="space-y-6"
             >
               <div>
@@ -75,6 +99,7 @@ const Contact = () => {
                 <input
                   type="text"
                   id="name"
+                  name='name'
                   className="w-full bg-[#250e3e] rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#7127ba] autofill:bg-yellow-200"
                   placeholder="Your Name"
                 />
@@ -85,6 +110,7 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
+                  name='email'
                   className="w-full bg-[#250e3e] rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#7127ba]"
                   placeholder="Your Email"
                 />
@@ -94,6 +120,7 @@ const Contact = () => {
                 <input
                   type="number"
                   id="mobile"
+                  name='mobile'
                   className="w-full bg-[#250e3e] rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#7127ba]"
                   placeholder="Your Mobile Number"
                 />
@@ -104,6 +131,7 @@ const Contact = () => {
                 <textarea
                   id="message"
                   rows="4"
+                  name='message'
                   className="w-full bg-[#250e3e] rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#7127ba]"
                   placeholder="Your message..."
                 ></textarea>
