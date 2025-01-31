@@ -1,38 +1,40 @@
-import { motion } from 'framer-motion';
-import { Github, ExternalLink } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Github, ExternalLink } from "lucide-react";
 import { useEffect } from "react";
 
-
 const Projects = () => {
-
   useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+    window.scrollTo(0, 0);
+  }, []);
 
   const projects = [
     {
-      title: "Project 1",
-      description: "This is my first project.",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop",
-      tech: ["React.js", "Node.js", "MongoDB"],
-      github: "https://github.com",
-      live: "https://project1.com"
+      title: "Personal Portfolio",
+      image: "/project/portfolio.png",
+      tech: ["Vite", "React", "JavaScript", "Tailwind"],
+      github: "https://github.com/avpkn25/Pet_Adoption",
+      live: "https://avpkn.vercel.app",
     },
     {
-      title: "Project 2",
-      description: "This is my second project.",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop",
-      tech: ["React.js", "Firebase", "Tailwind"],
-      github: "https://github.com",
-      live: "https://project2.com"
+      title: "Skill Certification Management System",
+      image:"/project/jfsd.png",
+      tech: ["Spring Boot", "JSP", "MySQL"],
+      github: "https://github.com/avpkn25/certifystack",
+      live: "NA",
     },
     {
-      title: "Project 3",
-      description: "This is my third project.",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop",
-      tech: ["Next.js", "PostgreSQL", "AWS"],
-      github: "https://github.com",
-      live: "https://project3.com"
+      title: "Car Showroom Management System",
+      image:"/project/car.png",
+      tech: ["JSF", "EJB", "JPA", "MySQL"],
+      github: "https://github.com/avpkn25/CAR-SHOWROOM",
+      live: "NA",
+    },
+    {
+      title: "Pet Adoption Management System",
+      image:"/project/pet.png",
+      tech: ["Django", "HTML", "CSS", "PostgreSQL"],
+      github: "https://github.com/avpkn25/Pet_Adoption",
+      live: "NA",
     },
   ];
 
@@ -44,7 +46,10 @@ const Projects = () => {
       className="min-h-screen bg-[#11071f]/90 pt-20 px-4"
     >
       <div className="container mx-auto">
-        <h1 className="text-4xl mt-9 text-center font-bold mb-12"> <span className='text-[#7127ba]' >My</span> Projects</h1>
+        <h1 className="text-4xl mt-9 text-center font-bold mb-12">
+          {" "}
+          <span className="text-[#7127ba]">My</span> Projects
+        </h1>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {projects.map((project, index) => (
             <motion.div
@@ -59,8 +64,9 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover"
+                  className="w-cover h-64 "
                 />
+                
                 <div className="absolute inset-0 bg-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <div className="flex space-x-4">
                     <a
@@ -71,25 +77,28 @@ const Projects = () => {
                     >
                       <Github size={20} />
                     </a>
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-white text-black p-2 rounded-full hover:bg-[#7b4ae2] hover:text-white transition-colors"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
+                    {project.live !== "NA" ? (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white text-black p-2 rounded-full hover:bg-[#7b4ae2] hover:text-white transition-colors"
+                      >
+                        <ExternalLink size={20} />
+                      </a>
+                    ) : (
+                      <a></a>
+                    )}
                   </div>
                 </div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-400 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="text-sm bg-[#7127ba]/20 text-[#e2d1fc] hover:bg-[#e2d1fc] hover:text-[#000] px-3 py-1 rounded-full"
+                      className="text-sm bg-[#7127ba]/20 text-[#e2d1fc] cursor-pointer hover:bg-[#e2d1fc] hover:text-[#000] px-3 py-1 rounded-full"
                     >
                       {tech}
                     </span>
