@@ -36,8 +36,8 @@ const Navbar = () => {
               to={item.path}
               className={({ isActive }) =>
                 `text-[20px] text-${
-                  isActive ? "[#882fe0]" : "gray-300"
-                } hover:text-[#882fe0] transition-colors`
+                  isActive ? "[#c135ff]" : "gray-300"
+                } hover:text-[#c135ff] transition-colors`
               }
             >
               {item.label}
@@ -63,8 +63,8 @@ const Navbar = () => {
               to={item.path}
               className={({ isActive }) =>
                 `block px-4 py-2 text-sm text-${
-                  isActive ? "[#882fe0]" : "gray-300"
-                } hover:text-[#882fe0] transition-colors`
+                  isActive ? "[#c135ff]" : "gray-300"
+                } hover:text-[#c135ff] transition-colors`
               }
               onClick={() => setIsOpen(false)}
             >

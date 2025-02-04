@@ -46,7 +46,7 @@ const Contact = () => {
     >
       <div className="container mt-9 mx-auto">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl text-center font-bold mb-8">Contact <span className='text-[#7127ba]' >Me</span></h1>
+          <h1 className="text-4xl text-center font-bold mb-8">Contact <span className='text-[#c135ff]' >Me</span></h1>
           
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Information */}
@@ -55,7 +55,7 @@ const Contact = () => {
                 
                 <div className="flex items-center space-x-4">
                   <div className="bg-[#7127ba]/20 p-3 rounded-lg">
-                    <Phone className="text-[#9a35ff]" />
+                    <Phone className="text-[#c135ff]" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold">Phone</h3>
@@ -64,7 +64,7 @@ const Contact = () => {
                 </div>
                 
                 <div className="flex items-center space-x-4">
-                  <div className="bg-[#7127ba]/20 p-3 rounded-lg">
+                  <div className="bg-[#9a35ff]/20 p-3 rounded-lg">
                     <MapPin className="text-[#9a35ff]" />
                   </div>
                   <div>

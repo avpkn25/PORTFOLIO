@@ -19,7 +19,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="sm:text-base text-sm">
-          <span className='text-[#9a35ff] ' >©</span> Made with ❤️ by <span className="text-[#9a35ff]" >Praveen Kumar</span> Using Reactjs
+          <span className='text-[#9a35ff] ' >©</span> Made with ❤️ by <span className="text-[#c135ff]" >Praveen Kumar</span> Using Reactjs
         </p>
       </div>
     </footer>

@@ -35,9 +35,9 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <h2 className="text-xl text-[#882fe0] mb-2">Hey There ✌️</h2>
+            <h2 className="text-xl text-[#c135ff] mb-2">Hey There ✌️</h2>
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              I AM <span className="text-[#7127ba]">PRAVEEN KUMAR</span>
+              I AM <span className="text-[#c135ff]">PRAVEEN KUMAR</span>
             </h1>
             <div className="text-xl md:text-2xl text-gray-300 mb-8">
               <h3>

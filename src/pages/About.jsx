@@ -99,10 +99,10 @@ const About = () => {
           className="mb-16"
         >
           <h1 className="text-4xl mt-9 text-center font-bold mb-12">
-            About <span className="text-[#7127ba]">Me</span>
+            About <span className="text-[#c135ff]">Me</span>
           </h1>
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6">
-            My Name is Praveen Kumar
+          <h2 className="text-2xl text-[#c135ff] sm:text-3xl font-bold mb-6">
+            Hey 👋, I'm Praveen Kumar
           </h2>
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
             <div className="lg:w-2/3">
@@ -116,7 +116,7 @@ const About = () => {
                 authentication, cloud databases, and automation. I enjoy solving
                 complex problems, optimizing system performance, and exploring
                 emerging technologies. Currently, I’m enhancing my skills in
-                SQL, Angular, and Power BI while actively seeking opportunities
+                SQL, and Power BI while actively seeking opportunities
                 to grow as a software developer.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mt-6">
@@ -140,15 +140,15 @@ const About = () => {
               </div>
             </div>
             <div className="lg:w-1/3 mt-2 sm:-mt-8 relative">
-              <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-[#7127ba]/30"></div>
+              <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-[#c135ff]/30"></div>
               <div className="space-y-6 pl-8">
                 {personalDetails.map((detail, index) => (
                   <div key={index} className="relative">
-                    <div className="absolute -left-8 top-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-[#7127ba] rounded-full"></div>
+                    <div className="absolute -left-8 top-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-[#c135ff] rounded-full"></div>
                     <div className="flex items-start gap-2">
-                      <detail.icon className="w-5.5 h-5.5 text-[#9a35ff] shrink-0 mt-1" />
+                      <detail.icon className="w-5.5 h-5.5 text-[#c135ff] shrink-0 mt-1" />
                       <div>
-                        <span className="text-[#9a35ff] text-lg">
+                        <span className="text-[#c135ff] text-lg">
                           {detail.label}:
                         </span>
                         <p className="text-gray-300 text-base">
@@ -171,7 +171,7 @@ const About = () => {
           className="mb-16"
         >
           <h2 className="text-3xl font-bold mb-8">
-            <span className="text-[#7127ba]">My</span> Education
+            <span className="text-[#c135ff]">My</span> Education
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
             {education.map((edu, index) => (
@@ -209,7 +209,7 @@ const About = () => {
           className="mb-16"
         >
           <h2 className="text-3xl font-bold mb-8">
-            <span className="text-[#7127ba]">My</span> Skills
+            <span className="text-[#c135ff]">My</span> Skills
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6">
@@ -253,7 +253,7 @@ const About = () => {
           className="mb-16"
         >
           <h2 className="text-3xl font-bold mb-8">
-            <span className="text-[#7127ba]">My</span> Tech Stack
+            <span className="text-[#c135ff]">My</span> Tech Stack
           </h2>
           <div className="grid grid-cols-4 md:grid-cols-8 gap-6">
             {techStack.map((tech, index) => (
