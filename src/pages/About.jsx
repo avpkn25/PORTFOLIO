@@ -65,7 +65,7 @@ const About = () => {
     { name: "Vite", icon: <StackIcon name="vitejs" />, url: "https://vite.dev/" },
     { name: "JavaScript", icon: <StackIcon name="js" />, url: "https://www.w3schools.com/js/" },
     { name: "MySQL", icon: <StackIcon name="mysql" />, url: "https://www.mysql.com/" },
-    { name: "AWS", icon: <StackIcon name="aws" />, url: "https://aws.amazon.com/" },
+    // { name: "AWS", icon: <StackIcon name="aws" />, url: "https://aws.amazon.com/" },
     { name: "Html", icon: <StackIcon name="html5" />, url: "https://www.w3schools.com/html/" },
     { name: "Css", icon: <StackIcon name="css3" />, url: "https://www.w3schools.com/css/" },
     { name: "django", icon: <StackIcon name="django" />, url: "https://www.djangoproject.com/" },
@@ -73,15 +73,15 @@ const About = () => {
     { name: "Postman", icon: <StackIcon name="postman" />, url: "https://www.postman.com/" },
     { name: "Git", icon: <StackIcon name="git" />, url: "https://git-scm.com/" },
     { name: "Tailwind", icon: <StackIcon name="tailwindcss" />, url: "https://tailwindcss.com/" },
-    { name: "GCloud", icon: <StackIcon name="gcloud" />, url: "https://cloud.google.com/?hl=en" },
+    // { name: "GCloud", icon: <StackIcon name="gcloud" />, url: "https://cloud.google.com/?hl=en" },
     { name: "Vs Code", icon: <StackIcon name="vscode" />, url: "https://code.visualstudio.com/" },
     { name: "Github", icon: <StackIcon name="github" />, url: "https://github.com/" },
-    { name: "Docker", icon: <StackIcon name="docker" />, url: "https://www.docker.com/" },
-    { name: "Azure", icon: <StackIcon name="azure" />, url: "https://azure.microsoft.com/en-in" },
-    { name: "Figma", icon: <StackIcon name="figma" />, url: "https://www.figma.com/" },
-    { name: "Canva", icon: <StackIcon name="canva" />, url: "https://www.canva.com/" },
-    { name: "Red Hat", icon: <StackIcon name="redhat" />, url: "https://www.redhat.com/en" },
-    { name: "Linux", icon: <StackIcon name="linux" />, url: "https://www.linux.org/" },
+    // { name: "Docker", icon: <StackIcon name="docker" />, url: "https://www.docker.com/" },
+    // { name: "Azure", icon: <StackIcon name="azure" />, url: "https://azure.microsoft.com/en-in" },
+    // { name: "Figma", icon: <StackIcon name="figma" />, url: "https://www.figma.com/" },
+    // { name: "Canva", icon: <StackIcon name="canva" />, url: "https://www.canva.com/" },
+    // { name: "Red Hat", icon: <StackIcon name="redhat" />, url: "https://www.redhat.com/en" },
+    // { name: "Linux", icon: <StackIcon name="linux" />, url: "https://www.linux.org/" },
   ];
 
   return (
@@ -96,7 +96,7 @@ const About = () => {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="mb-16"
+          className="mb-16 md:ml-6"
         >
           <h1 className="text-4xl mt-9 text-center font-bold mb-12">
             About <span className="text-[#c135ff]">Me</span>
@@ -105,21 +105,32 @@ const About = () => {
             Hey 👋, I'm Praveen Kumar
           </h2>
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
-            <div className="lg:w-2/3">
-              <p className="text-gray-300 leading-relaxed ">
-                I’m a passionate Computer Science and Engineering student
-                specializing in Data Science & Big Data Analytics. With a strong
-                foundation in backend development, I have hands-on experience
-                building full-stack applications using Spring Boot, JSP, and
-                React. My projects range from enterprise applications to
-                certification management systems, integrating secure
-                authentication, cloud databases, and automation. I enjoy solving
-                complex problems, optimizing system performance, and exploring
-                emerging technologies. Currently, I’m enhancing my skills in
-                SQL, and Power BI while actively seeking opportunities
-                to grow as a software developer.
+            <div className="lg:w-2/3 ">
+              <p className="text-gray-300 text-base md:text-xl leading-relaxed">
+                <ul className="list-none">
+                  <li>🟪 I'm a passionate Computer Science Student 🙍 Specializing in Data Science & Big Data Analytics.</li>
+                  <li>🟪 I'm a Full Stack Web Developer focused 🔍 on React and Backend Frameworks (Spring Boot, Django).</li>
+                  <li>🟪 AWS Certified Cloud Practitioner 📄 & Red Hat Certified Enterprise Application Developer.</li>
+                  <li>🟪 Strong Problem Solver 🌟 (2-Star in Code Chef, Leet Code Badges).</li>
+                </ul>
+
+                {/* Responsive Lists */}
+                <div className="flex flex-col md:gap-10 md:leading-relaxed md:flex-row md:space-x-10 mt-6">
+                  <ul className="list-none">
+                    <li><span className="text-[#c135ff]">Age:</span> 20 </li>
+                    <li><span className="text-[#c135ff]">Gender:</span> Male </li>
+                    <li><span className="text-[#c135ff]">Mobile:</span> +91 7893445580 </li>
+                    <li><span className="text-[#c135ff]">Email:</span> praveenkumarnaidu88@gmail.com </li>
+                  </ul>
+                  <ul className="list-none mt-0">
+                    <li><span className="text-[#c135ff]">Freelance:</span> Available </li>
+                    <li><span className="text-[#c135ff]">Work:</span> Student </li>
+                    <li><span className="text-[#c135ff]">Languages:</span> Telugu, English </li>
+                    <li><span className="text-[#c135ff]">Country:</span> India </li>
+                  </ul>
+                </div>
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 mt-6">
+              <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 mt-6">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -128,37 +139,18 @@ const About = () => {
                   Resume
                 </motion.button>
                 <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="border-2 border-[#9a35ff] text-[#9a35ff] px-6 py-3 rounded-lg hover:bg-[#7127ba] hover:text-white transition-colors"
-                  onClick={() =>
-                    window.open("https://wa.me/+917893445580", "_blank")
-                  }
-                >
-                  Let's Talk!
-                </motion.button>
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="border-2 border-[#9a35ff] text-[#9a35ff] px-6 py-3 rounded-lg hover:bg-[#7127ba] hover:text-white transition-colors"
+                onClick={() => (window.location.href = "/projects")}
+              >
+                View My Work
+              </motion.button>
+                
               </div>
             </div>
-            <div className="lg:w-1/3 mt-2 sm:-mt-8 relative">
-              <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-[#c135ff]/30"></div>
-              <div className="space-y-6 pl-8">
-                {personalDetails.map((detail, index) => (
-                  <div key={index} className="relative">
-                    <div className="absolute -left-8 top-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-[#c135ff] rounded-full"></div>
-                    <div className="flex items-start gap-2">
-                      <detail.icon className="w-5.5 h-5.5 text-[#c135ff] shrink-0 mt-1" />
-                      <div>
-                        <span className="text-[#c135ff] text-lg">
-                          {detail.label}:
-                        </span>
-                        <p className="text-gray-300 text-base">
-                          {detail.value}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+            <div className="lg:w-1/3 mt-2 lg:-ml-16 lg:-mt-20 flex justify-center align-center relative">
+              <img src="images/about.jpg" className=" w-[350px] h-[420px] object-cover border-4 border-[#9a35ff] rounded-3xl" />
             </div>
           </div>
         </motion.div>

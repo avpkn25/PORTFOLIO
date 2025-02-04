@@ -20,11 +20,8 @@ const Navbar = () => {
     <nav className="fixed w-full bg-[#1a0b2e]/90 backdrop-blur-sm z-50 px-3 sm:px-4 py-4">
       <div className="container mx-auto flex justify-between items-center">
         <NavLink to="/" className="flex items-center space-x-2">
-          <div className="bg-[#7127ba] rounded-full w-8 h-8 mt-1.5 flex items-center justify-center">
-            <span className="text-white font-bold">PK</span>
-          </div>
-          <span className="text-white text-lg sm:text-xl mt-1 font-bold">
-            {location.pathname === "/" ? "Portfolio" : "Praveen Kumar"}
+          <span className="text-white text-lg sm:text-3xl mt-1 font-bold">
+            <span className="text-[#c135ff]" >Praveen</span> Kumar
           </span>
         </NavLink>
 

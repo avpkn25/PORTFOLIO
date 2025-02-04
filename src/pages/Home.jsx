@@ -35,15 +35,12 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <h2 className="text-xl text-[#c135ff] mb-2">Hey There ✌️</h2>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              I AM <span className="text-[#c135ff]">PRAVEEN KUMAR</span>
-            </h1>
-            <div className="text-xl md:text-2xl text-gray-300 mb-8">
-              <h3>
-                {" "}
+            <h2 className="text-2xl md:text-3xl text-white mb-2">Hello ! <span className="text-[#c135ff]" >I'm Praveen Kumar </span></h2>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              {/* I AM <span className="text-[#c135ff]">PRAVEEN KUMAR</span> */}
+              {" "}
                 I am a
-                <TypeAnimation
+              <TypeAnimation
                   sequence={[
                     " Full Stack Developer",
                     2000,
@@ -60,9 +57,14 @@ const Home = () => {
                   ]}
                   repeat={Infinity}
                 />
+            </h1>
+            <div className="text-xl md:text-2xl text-gray-300 mt-8 mb-8">
+              <h3 className="text-base md:text-xl">
+                I'm a Student.
               </h3>
+              <h4 className="text-base md:text-xl">Currently, Pursuing B.Tech Degree at <img className=" inline-flex w-5 h-5" src="education/klu-nobg.png" /> <span className="text-[#c135ff]" >KL University</span>.</h4>
             </div>
-            <div className="flex space-x-4 justify-center md:justify-start">
+            <div className="flex space-x-4 justify-center lg:gap-3 md:justify-start">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -72,13 +74,15 @@ const Home = () => {
                 About Me
               </motion.button>
               <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="border-2 border-[#9a35ff] text-[#9a35ff] px-6 py-3 rounded-lg hover:bg-[#7127ba] hover:text-white transition-colors w-full sm:w-auto"
-                onClick={() => (window.location.href = "/projects")}
-              >
-                View My Work
-              </motion.button>
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="border-2 border-[#9a35ff] text-[#9a35ff] px-6 py-3 rounded-lg hover:bg-[#7127ba] hover:text-white transition-colors w-full sm:w-auto"
+                  onClick={() =>
+                    window.open("https://wa.me/+917893445580", "_blank")
+                  }
+                >
+                  Let's Talk!
+                </motion.button>
             </div>
           </motion.div>
         </div>

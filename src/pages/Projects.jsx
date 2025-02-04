@@ -67,14 +67,15 @@ const Projects = () => {
                   className="w-cover h-64 "
                 />
                 
-                <div className="absolute inset-0 bg-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <div className="absolute inset-0 bg-[#190b2c]/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <div className="flex space-x-4">
                     <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-white text-black p-2 rounded-full hover:bg-[#7b4ae2] hover:text-white transition-colors"
+                      className="bg-white text-[#7127ba] px-6 py-2 rounded-full flex items-center space-x-2 hover:bg-[#7127ba] hover:text-white transition-colors"
                     >
+                      <span>Code</span>
                       <Github size={20} />
                     </a>
                     {project.live !== "NA" ? (
@@ -82,8 +83,9 @@ const Projects = () => {
                         href={project.live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-white text-black p-2 rounded-full hover:bg-[#7b4ae2] hover:text-white transition-colors"
+                        className="bg-white text-[#7127ba] px-6 py-2 rounded-full flex items-center space-x-2 hover:bg-[#7127ba] hover:text-white transition-colors"
                       >
+                        <span>Link</span>
                         <ExternalLink size={20} />
                       </a>
                     ) : (
@@ -93,7 +95,7 @@ const Projects = () => {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                <h3 className="text-xl  font-semibold mb-2">{project.title}</h3>
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, techIndex) => (
                     <span
