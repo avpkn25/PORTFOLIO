@@ -255,7 +255,7 @@ const About = () => {
               <a key={index} href={tech.url} target="_blank" rel="noopener noreferrer">
                 <motion.div
                   whileHover={{ scale: 1.1 }}
-                  className="bg-[#42166d] p-3 sm:p-4 rounded-lg flex items-center justify-center gap-2 cursor-pointer"
+                  className="bg-[#42166d] p-3 sm:p-4 rounded-lg flex items-center justify-center gap-2"
                 >
                   <div className="w-8 h-8 sm:w-8 sm:h-8 md:w-12 md:h-12">{tech.icon}</div>
                   <span className="hidden sm:block sm:text-base md:text-lg">{tech.name}</span>
