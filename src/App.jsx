@@ -7,8 +7,19 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Achievements from "./pages/Achievements";
 import Contact from "./pages/Contact";
+import { useEffect } from "react";
 
 function App() {
+
+  useEffect(() => {
+    const disableRightClick = (event) => event.preventDefault();
+    document.addEventListener("contextmenu", disableRightClick);
+
+    return () => {
+      document.removeEventListener("contextmenu", disableRightClick);
+    };
+  }, []);
+
   return (
     <Router>
       <div className="min-h-screen bg-[#11081e]/100 text-white">

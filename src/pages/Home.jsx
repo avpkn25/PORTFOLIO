@@ -36,7 +36,7 @@ const Home = () => {
             transition={{ delay: 0.2 }}
           >
             <h2 className="text-2xl md:text-3xl text-white mb-2">Hello ! <span className="text-[#c135ff]" >I'm Praveen Kumar </span></h2>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">
               {/* I AM <span className="text-[#c135ff]">PRAVEEN KUMAR</span> */}
               {" "}
                 I am a
@@ -45,8 +45,6 @@ const Home = () => {
                     " Full Stack Developer",
                     2000,
                     " Java Enthusiast",
-                    2000,
-                    " Computer Science Student",
                     2000,
                     " Data Science Enthusiast",
                     2000,
@@ -60,9 +58,9 @@ const Home = () => {
             </h1>
             <div className="text-xl md:text-2xl text-gray-300 mt-8 mb-8">
               <h3 className="text-base md:text-xl">
-                I'm a Student.
+                I'm a Computer Science Student.
               </h3>
-              <h4 className="text-base md:text-xl">Currently, Pursuing B.Tech Degree at <img className=" inline-flex w-5 h-5" src="education/klu-nobg.png" /> <span className="text-[#c135ff]" >KL University</span>.</h4>
+              <h4 className="text-base md:text-xl">Currently, Pursuing my B.Tech Degree at <img className=" inline-flex w-5 h-5" src="education/klu-nobg.png" /> <span className="text-[#c135ff]" >KL University</span>.</h4>
             </div>
             <div className="flex space-x-4 justify-center lg:gap-3 md:justify-start">
               <motion.button

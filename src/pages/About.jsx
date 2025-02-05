@@ -135,6 +135,9 @@ const About = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-[#7127ba] text-white px-6 py-3 rounded-lg hover:bg-[#2e1452] transition-colors"
+                  onClick={() =>
+                    window.open("https://drive.google.com/file/d/1L8bkQLqvSjC-vi77wD8dcnruSl0JC6Tl/view?usp=sharing", "_blank")
+                  }
                 >
                   Resume
                 </motion.button>
@@ -170,7 +173,7 @@ const About = () => {
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.02 }}
-                className="bg-[#190b2c] p-6 rounded-lg"
+                className="bg-[#190b2c] p-6 rounded-lg border-2 border-[#7127ba]"
               >
                 <div className="flex items-center mb-4">
                   <img
