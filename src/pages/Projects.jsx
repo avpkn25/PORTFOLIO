@@ -23,6 +23,13 @@ const Projects = () => {
       live: "NA",
     },
     {
+      title: "Expense Tracker App",
+      image:"/project/expense.png",
+      tech: ["Vite", "React.js", "Context API", "Chart.js"],
+      github: "https://github.com/avpkn25/certifystack",
+      live: "https://expense-tracker-avpkn25.vercel.app/",
+    },
+    {
       title: "Car Showroom Management System",
       image:"/project/car.png",
       tech: ["JSF", "EJB", "JPA", "MySQL"],
