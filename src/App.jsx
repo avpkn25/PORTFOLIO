@@ -22,7 +22,7 @@ function App() {
 
   return (
     <Router>
-      <div className="min-h-screen bg-[#11081e]/100 text-white">
+      <div className="min-h-screen bg-[#020305]/100 text-white">
         <Navbar />
         <AnimatePresence mode="wait">
           <Routes>

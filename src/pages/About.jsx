@@ -48,22 +48,22 @@ const About = () => {
   const techStack = [
     { name: "Java", icon: <StackIcon name="java" />, url:"https://www.java.com/en/" },
     { name: "Spring Boot", icon: <StackIcon name="spring" />, url: "https://spring.io/projects/spring-boot" },
-    { name: "React", icon: <StackIcon name="reactjs" />, url: "https://react.dev/" },
-    { name: "Python", icon: <StackIcon name="python" />, url: "https://www.python.org/" },
     { name: "Vite", icon: <StackIcon name="vitejs" />, url: "https://vite.dev/" },
+    { name: "Html", icon: <StackIcon name="html5" />, url: "https://www.w3schools.com/html/" },
     { name: "JavaScript", icon: <StackIcon name="js" />, url: "https://www.w3schools.com/js/" },
     { name: "MySQL", icon: <StackIcon name="mysql" />, url: "https://www.mysql.com/" },
-    // { name: "AWS", icon: <StackIcon name="aws" />, url: "https://aws.amazon.com/" },
-    { name: "Html", icon: <StackIcon name="html5" />, url: "https://www.w3schools.com/html/" },
-    { name: "Css", icon: <StackIcon name="css3" />, url: "https://www.w3schools.com/css/" },
-    { name: "django", icon: <StackIcon name="django" />, url: "https://www.djangoproject.com/" },
-    { name: "MongoDB", icon: <StackIcon name="mongodb" />, url: "https://www.mongodb.com/" },
     { name: "Postman", icon: <StackIcon name="postman" />, url: "https://www.postman.com/" },
-    { name: "Git", icon: <StackIcon name="git" />, url: "https://git-scm.com/" },
-    { name: "Tailwind", icon: <StackIcon name="tailwindcss" />, url: "https://tailwindcss.com/" },
-    // { name: "GCloud", icon: <StackIcon name="gcloud" />, url: "https://cloud.google.com/?hl=en" },
-    { name: "Vs Code", icon: <StackIcon name="vscode" />, url: "https://code.visualstudio.com/" },
     { name: "Github", icon: <StackIcon name="github" />, url: "https://github.com/" },
+    { name: "Python", icon: <StackIcon name="python" />, url: "https://www.python.org/" },
+    { name: "django", icon: <StackIcon name="django" />, url: "https://www.djangoproject.com/" },
+    { name: "React", icon: <StackIcon name="reactjs" />, url: "https://react.dev/" },
+    { name: "Css", icon: <StackIcon name="css3" />, url: "https://www.w3schools.com/css/" },
+    { name: "Tailwind", icon: <StackIcon name="tailwindcss" />, url: "https://tailwindcss.com/" },
+    { name: "MongoDB", icon: <StackIcon name="mongodb" />, url: "https://www.mongodb.com/" },
+    { name: "Vs Code", icon: <StackIcon name="vscode" />, url: "https://code.visualstudio.com/" },
+    { name: "Git", icon: <StackIcon name="git" />, url: "https://git-scm.com/" },
+    // { name: "AWS", icon: <StackIcon name="aws" />, url: "https://aws.amazon.com/" },
+    // { name: "GCloud", icon: <StackIcon name="gcloud" />, url: "https://cloud.google.com/?hl=en" },
     // { name: "Docker", icon: <StackIcon name="docker" />, url: "https://www.docker.com/" },
     // { name: "Azure", icon: <StackIcon name="azure" />, url: "https://azure.microsoft.com/en-in" },
     // { name: "Figma", icon: <StackIcon name="figma" />, url: "https://www.figma.com/" },
@@ -176,7 +176,7 @@ const About = () => {
                 <h3 className="text-xl font-semibold mb-2">{edu.school}</h3>
                 <p className="text-gray-400 mb-2">{edu.grade}</p>
                 <div className="flex justify-between text-sm text-gray-400">
-                  <span className="text-sm bg-[#7127ba]/20 text-[#e2d1fc] cursor-pointer px-3 py-1 rounded-full flex items-center gap-1">
+                  <span className="text-sm bg-[#7127ba]/20 text-[#e2d1fc] cursor-pointer px-3 py-1 mt-2 rounded-full flex items-center gap-1">
                     <MapPin className="w-4 h-4" />
                       {edu.location}
                   </span>

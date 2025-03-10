@@ -43,6 +43,13 @@ const Projects = () => {
       github: "https://github.com/avpkn25/Pet_Adoption",
       live: "NA",
     },
+    {
+      title: "Weather API Dashboard",
+      image:"/project/weather.png",
+      tech: ["Vite", "API", "Tailwind", "Axios"],
+      github: "https://github.com/avpkn25/WEATHER-DASHBOARD",
+      live: "https://weather-dashboard-tau-orcin.vercel.app/",
+    },
   ];
 
   return (

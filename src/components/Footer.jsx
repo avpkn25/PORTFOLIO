@@ -2,7 +2,7 @@ import { Linkedin, Instagram, Twitter, Github } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#110111]/90 text-gray-300 py-4 px-4">
+    <footer className="bg-[#010101] text-gray-300 py-4 px-4">
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
         <div className="flex space-x-4 mb-4 md:mb-0">
           <a href="https://www.linkedin.com/in/avpkn25/" target="_blank" rel="noopener noreferrer" className="hover:text-[#9a35ff] transition-colors">

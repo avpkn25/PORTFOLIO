@@ -17,7 +17,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed w-full bg-[#110111]/90 backdrop-blur-sm z-50 px-3 sm:px-4 py-4">
+    <nav className="fixed w-full bg-[#010101] backdrop-blur-sm z-50 px-3 sm:px-4 py-4">
       <div className="container mx-auto flex justify-between items-center">
         <NavLink to="/" className="flex items-center space-x-2">
           <span className="text-white text-lg sm:text-3xl mt-1 font-bold">
@@ -53,7 +53,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-[#1a0b2e] py-4 border-t border-gray-800">
+        <div className="md:hidden absolute top-full left-0 w-full bg-[#010101] py-4 border-t border-gray-800">
           {navItems.map((item) => (
             <NavLink
               key={item.path}
