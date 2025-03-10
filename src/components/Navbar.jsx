@@ -17,7 +17,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed w-full bg-[#1a0b2e]/90 backdrop-blur-sm z-50 px-3 sm:px-4 py-4">
+    <nav className="fixed w-full bg-[#110111]/90 backdrop-blur-sm z-50 px-3 sm:px-4 py-4">
       <div className="container mx-auto flex justify-between items-center">
         <NavLink to="/" className="flex items-center space-x-2">
           <span className="text-white text-lg sm:text-3xl mt-1 font-bold">

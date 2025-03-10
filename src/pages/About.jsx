@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MapPin, Languages, Calendar, User, Briefcase } from "lucide-react";
+import { MapPin, Calendar } from "lucide-react";
 import StackIcon from "tech-stack-icons";
 
 const About = () => {
@@ -8,15 +8,15 @@ const About = () => {
       logo: "/education/klu.png",
       school: "Koneru Lakshmaiah Educational Foundation",
       degree: "B Tech in Computer Science & Engineering",
-      grade: "9.5 CGPA",
+      grade: "CGPA: 9.55",
       location: "Vijayawada, AP",
       period: "2022 - 2026",
     },
     {
       logo: "/education/chai.png",
       school: "Sree Chaitanya Junior College",
-      degree: "Intermediate",
-      grade: "861 Marks",
+      degree: "Intermediate in MPC",
+      grade: "Marks: 861",
       location: "Kavali, AP",
       period: "2020 - 2022",
     },
@@ -24,7 +24,7 @@ const About = () => {
       logo: "/education/school.png",
       school: "Sri Chaitanya Techno Curriculum",
       degree: "Secondary School",
-      grade: "599 Marks",
+      grade: "Marks: 599",
       location: "Kavali, AP",
       period: "upto 2020",
     },
@@ -43,18 +43,6 @@ const About = () => {
     { title: "Projects Completed", value: "5+" },
     { title: "Global Certifications", value: "2+" },
     { title: "Tech Stack Mastered", value: "4+ " },
-  ];
-
-  const personalDetails = [
-    {
-      icon: MapPin,
-      label: "From",
-      value: "Gowravaram, Kavali, Nellore, Andhra Pradesh, India",
-    },
-    { icon: Languages, label: "Languages", value: "English and Telugu" },
-    { icon: Calendar, label: "Age", value: "20" },
-    { icon: User, label: "Gender", value: "Male" },
-    { icon: Briefcase, label: "Work", value: "Student" },
   ];
 
   const techStack = [
@@ -89,7 +77,7 @@ const About = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="min-h-screen bg-[#11071f]/90 pt-20 px-3 sm:px-4"
+      className="min-h-screen bg-[#020305]/90 pt-20 px-3 sm:px-4"
     >
       <div className="container mx-auto">
         <motion.div
@@ -188,9 +176,16 @@ const About = () => {
                 <h3 className="text-xl font-semibold mb-2">{edu.school}</h3>
                 <p className="text-gray-400 mb-2">{edu.grade}</p>
                 <div className="flex justify-between text-sm text-gray-400">
-                  <span>{edu.location}</span>
-                  <span>{edu.period}</span>
-                </div>
+                  <span className="text-sm bg-[#7127ba]/20 text-[#e2d1fc] cursor-pointer px-3 py-1 rounded-full flex items-center gap-1">
+                    <MapPin className="w-4 h-4" />
+                      {edu.location}
+                  </span>
+                  
+                  <span className="text-sm bg-[#e2d1fc] text-[#000] cursor-pointer px-3 py-1 rounded-full flex items-center gap-1">
+                      <Calendar className="w-4 h-4" />
+                      {edu.period}
+                  </span>
+              </div>
               </motion.div>
             ))}
           </div>
@@ -219,7 +214,7 @@ const About = () => {
                       initial={{ width: 0 }}
                       animate={{ width: `${skill.level}%` }}
                       transition={{ duration: 1, delay: 0.8 }}
-                      className="h-full bg-[#9a35ff] rounded-full"
+                      className="h-full bg-[#6b25b2] rounded-full"
                     />
                   </div>
                 </div>
@@ -230,7 +225,7 @@ const About = () => {
                 <motion.div
                   key={index}
                   whileHover={{ scale: 1.05 }}
-                  className="bg-[#7127ba] p-6 rounded-lg text-center"
+                  className="bg-[#42166d] p-8 rounded-lg text-center"
                 >
                   <h3 className="text-3xl font-bold mb-2">{stat.value}</h3>
                   <p className="text-xs sm:text-xl text-gray-200">{stat.title}</p>

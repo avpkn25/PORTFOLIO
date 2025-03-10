@@ -12,7 +12,7 @@ const Home = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
-      className="min-h-screen bg-[#11071f]/90 pt-20 px-4 flex items-center"
+      className="min-h-screen bg-[#020305]/90 pt-20 px-4 flex items-center"
     >
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 mb-8 md:mb-0">

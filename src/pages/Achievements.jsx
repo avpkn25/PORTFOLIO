@@ -76,7 +76,7 @@ const Achievements = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="min-h-screen bg-[#11071f]/90 pt-20 px-3 sm:px-4"
+      className="min-h-screen bg-[#020305]/90 pt-20 px-3 sm:px-4"
     >
       <div className="container mx-auto">
         <h1 className="text-4xl mt-9 font-bold text-center mb-12"> <span className='text-[#c135ff]'>My</span> Achievements</h1>
@@ -87,7 +87,7 @@ const Achievements = () => {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: index * 0.1 }}
-              className="relative bg-[#1e0f31] rounded-lg overflow-hidden shadow-lg group"
+              className="relative bg-[#11071f] rounded-lg overflow-hidden shadow-lg group"
             >
               <div className="w-full h-64 flex items-center justify-center overflow-hidden">
                 <img
@@ -97,7 +97,7 @@ const Achievements = () => {
                 />
               </div>
 
-              <div className="p-4 bg-[#42166d] text-white text-center text-lg font-semibold">
+              <div className="p-4 bg-[#1e0f31] text-white text-center text-lg font-semibold">
                 {achievement.title}
               </div>
               <div className="absolute inset-0 bg-[#190b2c]/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
@@ -105,7 +105,7 @@ const Achievements = () => {
                   href={achievement.proof}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-white text-[#7127ba] px-6 py-2 rounded-full flex items-center space-x-2 hover:bg-[#7127ba] hover:text-white transition-colors"
+                  className="bg-[#e2d1fc] text-[#7127ba] px-6 py-2 rounded-full flex items-center space-x-2 hover:bg-[#7127ba] hover:text-white transition-colors"
                 >
                   <span>View</span>
                   <ExternalLink size={16} />

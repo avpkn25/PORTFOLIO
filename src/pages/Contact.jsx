@@ -42,7 +42,7 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="min-h-screen bg-[#11071f]/90 pt-20 px-4"
+      className="min-h-screen bg-[#020305]/90 pt-20 px-4"
     >
       <div className="container mt-9 mx-auto">
         <div className="max-w-4xl mx-auto">
@@ -55,7 +55,7 @@ const Contact = () => {
                 
                 <div className="flex items-center space-x-4">
                   <div className="bg-[#7127ba]/20 p-3 rounded-lg">
-                    <Phone className="text-[#c135ff]" />
+                    <Phone className="text-[#9a35ff]" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold">Phone</h3>

@@ -12,7 +12,7 @@ const Projects = () => {
       title: "Personal Portfolio",
       image: "/project/portfolio.png",
       tech: ["Vite", "React", "JavaScript", "Tailwind"],
-      github: "https://github.com/avpkn25/Pet_Adoption",
+      github: "NA",
       live: "https://avpkn.vercel.app",
     },
     {
@@ -50,7 +50,7 @@ const Projects = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="min-h-screen bg-[#11071f]/90 pt-20 px-4"
+      className="min-h-screen bg-[#020305]/90 pt-20 px-4"
     >
       <div className="container mx-auto">
         <h1 className="text-4xl mt-9 text-center font-bold mb-12">
@@ -65,7 +65,7 @@ const Projects = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: index * 0.2 }}
               whileHover={{ y: -5 }}
-              className="bg-[#190b2c] rounded-lg overflow-hidden"
+              className="bg-[#11071f] rounded-lg overflow-hidden"
             >
               <div className="relative group">
                 <img
@@ -76,21 +76,25 @@ const Projects = () => {
                 
                 <div className="absolute inset-0 bg-[#190b2c]/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <div className="flex space-x-4">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-white text-[#7127ba] px-6 py-2 rounded-full flex items-center space-x-2 hover:bg-[#7127ba] hover:text-white transition-colors"
-                    >
-                      <span>Code</span>
-                      <Github size={20} />
-                    </a>
+                  {project.github !== "NA" ? (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-[#e2d1fc] text-[#7127ba] px-6 py-2 rounded-full flex items-center space-x-2 hover:bg-[#7127ba] hover:text-white transition-colors"
+                      >
+                        <span>Code</span>
+                        <ExternalLink size={20} />
+                      </a>
+                    ) : (
+                      <a></a>
+                    )}
                     {project.live !== "NA" ? (
                       <a
                         href={project.live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-white text-[#7127ba] px-6 py-2 rounded-full flex items-center space-x-2 hover:bg-[#7127ba] hover:text-white transition-colors"
+                        className="bg-[#e2d1fc] text-[#7127ba] px-6 py-2 rounded-full flex items-center space-x-2 hover:bg-[#7127ba] hover:text-white transition-colors"
                       >
                         <span>Link</span>
                         <ExternalLink size={20} />
