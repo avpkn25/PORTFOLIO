@@ -124,7 +124,7 @@ const About = () => {
                   whileTap={{ scale: 0.95 }}
                   className="bg-[#7127ba] text-white px-6 py-3 rounded-lg hover:bg-[#2e1452] transition-colors"
                   onClick={() =>
-                    window.open("https://drive.google.com/file/d/1oIPV8_V-U3_NxauTVKjTtf1ARiUYcYUM/view?usp=sharing", "_blank")
+                    window.open("https://drive.google.com/file/d/1D_000UhpR0AZNbnTUyom_LzGdGLbuDDR/view?usp=sharing", "_blank")
                   }
                 >
                   Resume
