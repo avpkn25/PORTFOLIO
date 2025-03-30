@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import FloatingButton from './components/FloatingButton';
+import SocialLinks from './components/SocialLinks';
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -24,6 +26,7 @@ function App() {
     <Router>
       <div className="min-h-screen bg-[#020305]/100 text-white">
         <Navbar />
+        <SocialLinks />
         <AnimatePresence mode="wait">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -33,6 +36,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </AnimatePresence>
+        <FloatingButton resumeUrl="https://drive.google.com/file/d/1iQ7eCQiIjCvhEFS-wYYbMTBHc4VWvtZr/view?usp=sharing" />
         <Footer />
       </div>
     </Router>

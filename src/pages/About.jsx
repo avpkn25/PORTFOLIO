@@ -96,7 +96,7 @@ const About = () => {
             <div className="lg:w-2/3 ">
               <p className="text-gray-300 text-base md:text-xl leading-relaxed">
                 <ul className="list-none">
-                  <li>🟪 I'm a passionate Computer Science Student 🙍 Specializing in Data Science & Big Data Analytics.</li>
+                  <li>🟪 I'm a passionate Computer Science Student 👨🏻‍💻 Specializing in Data Science & Big Data Analytics.</li>
                   <li>🟪 I'm a Full Stack Web Developer focused 🔍 on React and Backend Frameworks (Spring Boot, Django).</li>
                   <li>🟪 AWS Certified Cloud Practitioner 📄 & Red Hat Certified Enterprise Application Developer.</li>
                   <li>🟪 Strong Problem Solver 🌟 (2-Star in Code Chef, Leet Code Badges).</li>
@@ -123,9 +123,7 @@ const About = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-[#7127ba] text-white px-6 py-3 rounded-lg hover:bg-[#2e1452] transition-colors"
-                  onClick={() =>
-                    window.open("https://drive.google.com/file/d/1iQ7eCQiIjCvhEFS-wYYbMTBHc4VWvtZr/view?usp=sharing", "_blank")
-                  }
+                  onClick={() => (window.location.href = "/projects")}
                 >
                   Resume
                 </motion.button>

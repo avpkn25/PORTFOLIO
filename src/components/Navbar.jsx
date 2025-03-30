@@ -13,7 +13,7 @@ const Navbar = () => {
     { path: "/about", label: "About" },
     { path: "/projects", label: "Projects" },
     { path: "/achievements", label: "Achievements" },
-    { path: "/contact", label: "Contact" },
+    { path: "/contact", label: "Contact" }
   ];
 
   return (
@@ -29,14 +29,14 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-8">
           {navItems.map((item) => (
             <NavLink
-              key={item.path}
-              to={item.path}
-              className={({ isActive }) =>
-                `text-[20px] text-${
-                  isActive ? "[#c135ff]" : "gray-300"
-                } hover:text-[#c135ff] transition-colors`
-              }
-            >
+            key={item.path}
+            to={item.path}
+            className={({ isActive }) =>
+              `text-[20px] py-2 text-${
+                    isActive ? "[#c135ff]" : "gray-300"
+                  } hover:text-[#c135ff] transition-colors`
+            }
+          >
               {item.label}
             </NavLink>
           ))}
@@ -56,15 +56,15 @@ const Navbar = () => {
         <div className="md:hidden absolute top-full left-0 w-full bg-[#010101] py-4 border-t border-gray-800">
           {navItems.map((item) => (
             <NavLink
-              key={item.path}
-              to={item.path}
-              className={({ isActive }) =>
-                `block px-4 py-2 text-sm text-${
-                  isActive ? "[#c135ff]" : "gray-300"
-                } hover:text-[#c135ff] transition-colors`
-              }
-              onClick={() => setIsOpen(false)}
-            >
+            key={item.path}
+            to={item.path}
+            className={({ isActive }) =>
+              `block px-4 py-2 text-sm text-${
+                    isActive ? "[#c135ff]" : "gray-300"
+                  } hover:text-[#c135ff] transition-colors`
+            }
+            onClick={() => setIsOpen(false)}
+          >
               {item.label}
             </NavLink>
           ))}
