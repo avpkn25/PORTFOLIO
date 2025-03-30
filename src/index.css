@@ -6,3 +6,10 @@ body {
   font-family: podkova;
   font-size: 1.22rem;
 }
+
+@layer utilities {
+  ::selection {
+    background-color: #431d78; /* Change this to your preferred color */
+    color: white; /* Change this to your preferred text color */
+  }
+}

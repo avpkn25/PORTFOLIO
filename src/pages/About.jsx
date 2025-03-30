@@ -34,8 +34,8 @@ const About = () => {
     { name: "Competitive Programming", level: 85 },
     { name: "Full Stack Development", level: 70 },
     { name: "Database Technologies", level: 68 },
-    { name: "Cloud Technologies", level: 40 },
     { name: "Data Science", level: 60 },
+    { name: "Cloud Technologies", level: 40 },
   ];
 
   const stats = [
