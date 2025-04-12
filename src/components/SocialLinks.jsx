@@ -1,9 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Linkedin, Instagram, Send, Twitter, ChevronRight, ChevronLeft } from 'lucide-react';
 
 const SocialLinks = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [hovered, setHovered] = useState(null);
+  const location = useLocation(); // Track route changes
+
+  useEffect(() => {
+    setIsVisible(false); // Close the toggle on route change
+  }, [location.pathname]);
 
   const socialLinks = [
     { icon: <Linkedin className="w-6 h-6" />, url: 'https://linkedin.com/in/avpkn25', label: 'LinkedIn' },
@@ -17,8 +23,7 @@ const SocialLinks = () => {
       <div
         className={`
           bg-[#2e1452] backdrop-blur-sm rounded-lg py-4 px-3 shadow-lg flex flex-col gap-4
-          transform transition-all duration-300 origin-left ${isVisible ? 'opacity-100 w-14 pl-4' : 'opacity-0 w-0 pl-0'}`
-        }
+          transform transition-all duration-300 origin-left ${isVisible ? 'opacity-100 w-14 pl-4' : 'opacity-0 w-0 pl-0'}`}
       >
         {socialLinks.map((link, index) => (
           <div key={index} className="relative group">
@@ -41,7 +46,7 @@ const SocialLinks = () => {
           </div>
         ))}
       </div>
-      
+
       <button
         onClick={() => setIsVisible(!isVisible)}
         className={`bg-[#2e1452] hover:bg-[#2e1451] p-3 rounded-r-lg shadow-lg transform transition-all duration-200 text-white flex items-center justify-center w-10 h-10 ${isVisible ? 'ml-0' : '-ml-3'}`}
