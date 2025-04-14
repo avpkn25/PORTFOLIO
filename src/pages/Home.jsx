@@ -37,7 +37,6 @@ const Home = () => {
           >
             <h2 className="text-2xl md:text-3xl text-white mb-2">Hello ! <span className="text-[#c135ff]" >I'm Praveen Kumar </span></h2>
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              {/* I AM <span className="text-[#c135ff]">PRAVEEN KUMAR</span> */}
               {" "}
                 I am a
               <TypeAnimation

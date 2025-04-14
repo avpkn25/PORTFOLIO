@@ -67,6 +67,16 @@ const Achievements = () => {
       title: "AI-ML Virtual Internship by AICTE",
       image: "/images/certifications/aimlvirtual.png",
       proof: "https://drive.google.com/file/d/1CF7glZxhGS7ld1SJt1VZ8HNFIsSBOj5f/view?usp=sharing"
+    },
+    {
+      title: "Flipkart GRiD 6.0 - Software Development Track",
+      image: "/images/certifications/unstop/f.png",
+      proof: "https://drive.google.com/file/d/1CF7glZxhGS7ld1SJt1VZ8HNFIsSBOj5f/view?usp=sharing"
+    },
+    {
+      title: "L'Oréal Sustainability Challenge 2024",
+      image: "/images/certifications/unstop/LOREAL.jpg",
+      proof: "https://drive.google.com/file/d/1CF7glZxhGS7ld1SJt1VZ8HNFIsSBOj5f/view?usp=sharing"
     }
     
   ];
