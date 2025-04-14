@@ -71,12 +71,12 @@ const Achievements = () => {
     {
       title: "Flipkart GRiD 6.0 - Software Development Track",
       image: "/images/certifications/unstop/f.png",
-      proof: "https://drive.google.com/file/d/1CF7glZxhGS7ld1SJt1VZ8HNFIsSBOj5f/view?usp=sharing"
+      proof: "https://unstop.com/certificate-preview/a6b875dc-d51f-462d-a21a-e67d9f1c252e"
     },
     {
       title: "L'Oréal Sustainability Challenge 2024",
       image: "/images/certifications/unstop/LOREAL.jpg",
-      proof: "https://drive.google.com/file/d/1CF7glZxhGS7ld1SJt1VZ8HNFIsSBOj5f/view?usp=sharing"
+      proof: "https://unstop.com/certificate-preview/4b70e159-acc3-4a86-a3c0-d772c5dd023c"
     }
     
   ];
