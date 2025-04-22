@@ -123,7 +123,7 @@ const About = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-[#7127ba] text-white px-6 py-3 rounded-lg hover:bg-[#2e1452] transition-colors"
-                  onClick={() => window.open("https://drive.google.com/file/d/1iQ7eCQiIjCvhEFS-wYYbMTBHc4VWvtZr/view?usp=sharing", "_blank")}
+                  onClick={() => window.open("https://drive.google.com/file/d/1FiELjZMq1kI_F8k-LhWxASkRDQyWR-k8/view?usp=sharing", "_blank")}
                 >
                   Resume
                 </motion.button>

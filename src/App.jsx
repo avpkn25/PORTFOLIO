@@ -36,7 +36,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </AnimatePresence>
-        <FloatingButton resumeUrl="https://drive.google.com/file/d/1iQ7eCQiIjCvhEFS-wYYbMTBHc4VWvtZr/view?usp=sharing" />
+        <FloatingButton resumeUrl="https://drive.google.com/file/d/1FiELjZMq1kI_F8k-LhWxASkRDQyWR-k8/view?usp=sharing" />
         <Footer />
       </div>
     </Router>
