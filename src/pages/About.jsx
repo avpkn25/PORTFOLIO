@@ -122,7 +122,15 @@ const About = () => {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-[#7127ba] text-white px-6 py-3 rounded-lg hover:bg-[#2e1452] transition-colors"
+                  className="hidden sm:flex bg-[#7127ba] text-white px-6 py-3 rounded-lg hover:bg-[#2e1452] transition-colors"
+                  onClick={() => window.open("https://linktr.ee/avpkn25", "_blank")}
+                >
+                  Profiles
+                </motion.button>
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="sm:hidden bg-[#7127ba] text-white px-6 py-3 rounded-lg hover:bg-[#2e1452] transition-colors"
                   onClick={() => window.open("https://drive.google.com/file/d/1FiELjZMq1kI_F8k-LhWxASkRDQyWR-k8/view?usp=sharing", "_blank")}
                 >
                   Resume

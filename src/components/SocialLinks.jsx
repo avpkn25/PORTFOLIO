@@ -13,7 +13,7 @@ const SocialLinks = () => {
 
   const socialLinks = [
     { icon: <Linkedin className="w-6 h-6" />, url: 'https://linkedin.com/in/avpkn25', label: 'LinkedIn' },
-    { icon: <Send className="w-6 h-6" />, url: 'https://t.me/AVPKN_25', label: 'Telegram' },
+    { icon: <Send className="w-6 h-6" />, url: 'https://t.me/avpkn25', label: 'Telegram' },
     { icon: <Instagram className="w-6 h-6" />, url: 'https://instagram.com/avpkn25', label: 'Instagram' },
     { icon: <Twitter className="w-6 h-6" />, url: 'https://x.com/avpkn25', label: 'Twitter' }
   ];
