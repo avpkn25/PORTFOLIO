@@ -16,17 +16,19 @@ const Home = () => {
     >
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 mb-8 md:mb-0">
-          <motion.div
-            initial={{ scale: 0.8 }}
-            animate={{ scale: 1 }}
-            className="rounded-full border-2 border-[#9a35ff] sm:w-[400px] sm:h-[400px] w-64 h-64 mt-4 mx-auto overflow-hidden"
-          >
-            <img
-              src='/images/main.jpg'
-              alt="Profile"
-              className="w-full h-full object-cover"
-            />
-          </motion.div>
+        <motion.div
+          initial={{ scale: 0.8 }}
+          animate={{ scale: 1 }}
+          className="relative z-[1] sm:w-[400px] sm:h-[400px] w-64 h-64 mt-4 mx-auto overflow-hidden border-[4px] border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.2)] animate-[morphing_10s_infinite]"
+          style={{ borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%' }}
+        >
+          <img
+            src="/images/main.jpg"
+            alt="Profile"
+            className="w-full h-full object-cover"
+          />
+        </motion.div>
+
         </div>
 
         <div className="md:w-1/2 text-center md:text-left">
