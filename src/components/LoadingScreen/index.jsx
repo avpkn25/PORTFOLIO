@@ -55,12 +55,6 @@ const LoadingScreen = ({ onLoadingComplete }) => {
         <CubeAnimation progress={progress} />
         
         <div className="loading-text-container">
-          <TextReveal 
-            text="Welcome to My Portfolio" 
-            delay={0.8} 
-            duration={1.6} 
-            className="loading-title"
-          />
           
           <TextReveal 
             text="Welcome to My Portfolio Website" 

@@ -31,7 +31,7 @@ function App() {
 
   return (
     <>
-      {isLoading && <LoadingScreen onLoadingComplete={handleLoadingComplete} />}
+      {/* {isLoading && <LoadingScreen onLoadingComplete={handleLoadingComplete} />} */}
       <Router>
         <div className="min-h-screen bg-[#020305]/100 text-white">
           <Navbar />
