@@ -23,7 +23,7 @@ const Home = () => {
           style={{ borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%' }}
         >
           <img
-            src="/images/newimage.png"
+            src="/images/main.jpg"
             alt="Profile"
             className="w-full h-full object-cover"
           />

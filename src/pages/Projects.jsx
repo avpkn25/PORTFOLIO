@@ -17,36 +17,57 @@ const Projects = () => {
     },
     {
       title: "Skill Certification Management System",
-      image:"/project/jfsd.png",
+      image: "/project/jfsd.png",
       tech: ["Spring Boot", "JSP", "MySQL"],
       github: "https://github.com/avpkn25/certifystack",
       live: "NA",
     },
     {
+      title: "Movies App",
+      image: "/project/movie.png",
+      tech: [
+        "MERN Stack",
+        "Reactjs",
+        "Nodejs",
+        "Expressjs",
+        "tailwindcss",
+        "MongoDB",
+      ],
+      github: "https://github.com/avpkn25/movies-app",
+      live: "NA",
+    },
+    {
       title: "Expense Tracker App",
-      image:"/project/expense.png",
+      image: "/project/expense.png",
       tech: ["Vite", "React.js", "Context API", "Chart.js"],
       github: "https://github.com/avpkn25/certifystack",
       live: "https://expense-tracker-avpkn25.vercel.app/",
     },
     {
       title: "Car Showroom Management System",
-      image:"/project/car.png",
+      image: "/project/car.png",
       tech: ["JSF", "EJB", "JPA", "MySQL"],
       github: "https://github.com/avpkn25/CAR-SHOWROOM",
       live: "NA",
     },
     {
       title: "Pet Adoption Management System",
-      image:"/project/pet.png",
+      image: "/project/pet.png",
       tech: ["Django", "HTML", "CSS", "PostgreSQL"],
       github: "https://github.com/avpkn25/Pet_Adoption",
       live: "NA",
     },
     {
       title: "Weather API Dashboard",
-      image:"/project/weather.png",
+      image: "/project/weather.png",
       tech: ["Vite", "API", "Tailwind", "Axios"],
+      github: "https://github.com/avpkn25/WEATHER-DASHBOARD",
+      live: "https://weather-dashboard-tau-orcin.vercel.app/",
+    },
+    {
+      title: "Todo App",
+      image: "/project/todo.png",
+      tech: ["HTML", "CSS", "Java Script"],
       github: "https://github.com/avpkn25/WEATHER-DASHBOARD",
       live: "https://weather-dashboard-tau-orcin.vercel.app/",
     },
@@ -80,10 +101,10 @@ const Projects = () => {
                   alt={project.title}
                   className="w-cover h-64 "
                 />
-                
+
                 <div className="absolute inset-0 bg-[#190b2c]/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <div className="flex space-x-4">
-                  {project.github !== "NA" ? (
+                    {project.github !== "NA" ? (
                       <a
                         href={project.github}
                         target="_blank"
